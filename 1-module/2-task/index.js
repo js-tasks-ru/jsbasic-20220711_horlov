@@ -12,12 +12,9 @@ function print(text) {
 
 
 function isValid(name) {
-    
-  if (name) {
-      
-    return ((name.indexOf(' ') < 0) && (name.length >= 4));
-    
-    } return false;
+
+  return !!name && name.length >= 4 && !name.includes(" ");
+
   }
 
 function sayHello() {
