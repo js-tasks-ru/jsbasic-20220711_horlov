@@ -1,7 +1,7 @@
 function filterRange(arr, a, b) {
 
-  let resultArr = [];
-  arr.map((item) => { if (item < b && item >= a) resultArr.push(item) });
-  
-  return  resultArr;
+  return arr.filter(item => (a <= item && item <= b));
+
 }
+
+// куда сдесь приделать map я так и не понял...

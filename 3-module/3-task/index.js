@@ -1,9 +1,15 @@
 function camelize(str) {
+   
+  return str
 
-  let arr = str.split('-');
-  for (let i = 1; i < arr.length; i++) {
-    
-    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+  .split('-')
+  .map(
+ 
+    (word, i) => i == 0 ? word : word[0].toUpperCase() + word.slice(1)
+  )
+
+    .join('')
+  
   }
-  return arr.join('');
-}
+
+
