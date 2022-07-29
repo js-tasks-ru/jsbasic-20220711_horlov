@@ -46,5 +46,5 @@ function highlight(table) {
 }
  
 let table = document.querySelector(".js-teachers");
-highlight(table);
+
 
