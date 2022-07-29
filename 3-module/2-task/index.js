@@ -1,3 +1,7 @@
 function filterRange(arr, a, b) {
-  // ваш код...
+
+  return arr.filter(item => (a <= item && item <= b));
+
 }
+
+// куда сдесь приделать map я так и не понял...
